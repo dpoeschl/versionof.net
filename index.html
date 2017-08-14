@@ -1,281 +1,346 @@
 <html>
-<head>
-  <title>versionof.net</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  /* Icon when the collapsible content is shown */
-  .expandableButton:after {
-    font-family: "Glyphicons Halflings";
-    content: "\e114";
-    float: right;
-    margin-left: 5px;
-  }
-  /* Icon when the collapsible content is hidden */
-  .expandableButton.collapsed:after {
-    content: "\e080";
-  }
+  <head>
+    <title>versionof.net</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+        /* Icon when the collapsible content is shown */
+        .expandableButton:after {
+        font-family: "Glyphicons Halflings";
+        content: "\e114";
+        float: right;
+        margin-left: 5px;
+        }
+        /* Icon when the collapsible content is hidden */
+        .expandableButton.collapsed:after {
+        content: "\e080";
+        }
+        .btn-info {
+        width: 120px;
+        text-align: left;
+        padding-right: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 5px;
+        margin-right: 0px;
+        margin-top: 1px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        background-color: #68217A;
+        border-color: #68217A;
+        }
 
-  .btn-info {
-    width: 120px;	
-	text-align: left;
-    padding-right: 5px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-    padding-left: 5px;
-	margin-right: 0px;
-	margin-top: 1px;
-	margin-bottom: 0px;
-    margin-left: 0px;
-    background-color: #68217A;
-	border-color: #68217A;
-  }
-  
-  .btn-info:hover {
-    background-color: #68217A;
-	border-color: #68217A;
-  }
-  
-  .btn-info:focus {
-    background-color: #68217A;
-	border-color: #68217A;
-  }
-  
-  .btn-info:selected {
-    background-color: #68217A;
-	border-color: #68217A;
-  }
-  
-  .details {
-    padding-left: 25px;
-  }
-  
-  .date {
-    font-weight: bold;
-	display: inline-block;
-	width: 85px;
-	margin-left: 5px;
-  }
-  
-  .version {
-	font-style: italic;
-	display: inline-block;
-	width: 180px;
-  }
-  </style>
-</head>
+        .btn-info:hover {
+        background-color: #68217A;
+        border-color: #68217A;
+        }
 
-<body>
-<h2>Visual Studio 2017</h2>
-<ul>
-  <li>
-    <button type="button" class="btn-info">Update-3 Preview-2</button> <span class="date">(6/8/2017)</span> - <span class="version">15.3.0+26606.00-d15rel</span>
-    <div id="15.3.P2" class="details collapse">
-      <b><a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Preview-2-Version-15.3" target="_blank">Roslyn Tag</a>:</b> Visual-Studio-2017-Preview-2-Version-15.3<br />
-      <b>Roslyn SHA:</b> 3722bb710cae2b542cc2004aacd5ac21836592a4<br />
-      <b>Roslyn Build:</b> Roslyn-Signed_20170601.1
-    </div>
-  </li>
-  <li>
-    <button type="button" class="btn-info">Update-3 Preview-1</button> <span class="date">(5/11/2017)</span> - <span class="version">15.3.0+26510.00-d15rel</span>
-    <div id="15.3.P1" class="details collapse">
-      <b><a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Preview-Version-15.3" target="_blank">Roslyn Tag</a>:</b> Visual-Studio-2017-Preview-Version-15.3<br />
-      <b>Roslyn SHA:</b> 8f02e04893c4b53cf6ca11b064848888365914d3<br />
-      <b>Roslyn Build:</b> Roslyn-Signed_20170503.10
-    </div>
-  </li>
-  <li>
-    <button type="button" class="btn-info">Update-2</button> <span class="date">(6/9/2017)</span> - <span class="version">15.2.0+26430.13-d15svc</span>
-    <div id="15.2" class="details collapse">
-      <b><a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Version-15.2" target="_blank">Roslyn Tag</a>:</b> Visual-Studio-2017-Version-15.2<br />
-      <b>Roslyn SHA:</b> 6969b516a24b460e269b1ae2be09d8c4cd220c27<br />
-      <b>Roslyn Build:</b> Roslyn-Signed_20170424.4
-    </div>
-  </li>
-  <li>
-    <button type="button" class="btn-info">Update-1</button> <span class="date">(4/17/2017)</span> - <span class="version">15.1.0+26403.07-d15svc</span>
-    <div id="15.1" class="details collapse">
-      <b><a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Version-15.1" target="_blank">Roslyn Tag</a>:</b> Visual-Studio-2017-Version-15.1<br />
-      <b>Roslyn SHA:</b> 3f5bdf2a01f91470f1c8d0744bad3faabe39c4a3<br />
-      <b>Roslyn Build:</b> Roslyn-Signed_20170320.4
-    </div>
-  </li>
-  <li>
-    <button type="button" class="btn-info">RTW</button> <span class="date">(3/31/2017)</span> - <span class="version">15.0.0+26228.12-d15rtwsvc</span>
-    <div id="15.0" class="details collapse">
-      <b><a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017" target="_blank">Roslyn Tag</a>:</b> Visual-Studio-2017<br />
-      <b>Roslyn SHA:</b> 019ce6f2d8048aee7e0e8b4a9d9733ce91469898<br />
-      <b>Roslyn Build:</b> Roslyn-Signed_20170301.5
-    </div>
-  </li>
-  <li>
-    <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15rc4">RC.4</button> <span class="date">(2/7/2017)</span> - <span class="version">15.0.0-RC4+26206.0.d15rel</span>
-    <div id="d15rc4" class="details collapse">
-      <b><a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-RC4" target="_blank">Roslyn Tag</a>:</b> Visual-Studio-2017-RC4<br />
-      <b>Roslyn SHA:</b> 53f2a8744e08c70cd42e38e3d5571a957ddaaf69<br />
-      <b>Roslyn Build:</b> Roslyn-Signed_20170204.7
-    </div>
-  </li>
-    <li>
-	<button type="button" class="btn-info">RC.3</button> <span class="date">(1/27/2017)</span> - <span class="version">15.0.0-RC.3+26127.0</span>
-    </li>
-	<li>
-		<button type="button" class="btn-info">RC.2</button> <span class="date">(12/12/2016)</span>
-	</li>
-    <li>
-		<button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15rc">RC</button> <span class="date">(11/16/2016)</span> - <span class="version">15.0.25909.02 d15rel</span> [Roslyn Info]
-		<div id="d15rc" class="details collapse">
-			<b><a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-RC" target="_blank">Roslyn Tag</a>:</b> Visual-Studio-2017-RC<br />
-			<b>Roslyn SHA:</b> 5bfc051d4e24768be0e9f515b57e14375fb3b4e5<br />
-			<b>Roslyn Build:</b> Roslyn-Signed_20161104.10
-		</div>
-	</li>
-    <li>
-		<button type="button" class="btn-info">Preview 5</button> <span class="date">(10/05/2016)</span> - <span class="version">15.0.25802.00 Preview</span>
-	</li>
-    <li>
-		<button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15preview4">Preview 4</button> <span class="date">(8/22/2016)</span> - <span class="version">15.0.25618.00 Preview</span> [Roslyn Info]
-		<div id="d15preview4" class="details collapse">
-			<b>Roslyn Tag:</b> Visual-Studio-15-Preview-4<br />
-			<b>Roslyn SHA:</b> eb964d42c8f8e763e4379f1e33c3cf5547692a3f<br />
-			<b>Roslyn Build:</b> Roslyn-Signed\dev15-preview4-df\Release\20160808.3
-		</div>
-    </li>
-    <li>
-		<button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15preview3">Preview 3</button> <span class="date">(7/7/2016)</span> - <span class="version">15.0.25428.01 Preview</span> [Installer Path]
-		<div id="d15preview3" class="details collapse">
-			<b>Installer Path:</b> &lt;server&gt;\drops\vs\preview\layouts\x86ret\25428.01\enu\vs\enterprise\dvd\vs_enterprise.exe
-		</div>
-	</li>
-    <li>
-		<button type="button" class="btn-info">Preview 2</button> <span class="date">(5/10/2016)</span> - <span class="version">15.0.25302.00 Preview</span>
-	</li>
-    <li>
-		<button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15preview">Preview</button> <span class="date">(3/30/2016)</span> - <span class="version">15.0.25123.00 Preview</span> [Installer Path] [Roslyn Info]
-		<div id="d15preview" class="details collapse">
-			<b>Installer Path:</b> &lt;server&gt;\drops\vs\preview\layouts\x86ret\25123.00\enu\vs\enterprise\dvd\vs_enterprise.exe<br />
-			<b>Roslyn Tag:</b> Visual-Studio-15-Preview<br />
-			<b>Roslyn SHA:</b> af0922bd496d60403886cc5c32997adced7da7d7<br />
-			<b>Roslyn Build:</b> Roslyn-Future-Stabilization-Signed-Release_20160317.3
-		</div>		
-    </li>
-</ul>
+        .btn-info:focus {
+        background-color: #68217A;
+        border-color: #68217A;
+        }
 
-<h2>Visual Studio 2015</h2>
-<ul>
-  <li><b>Visual Studio 2015 Update 3</b></li>
-  <ul>
-    <li><b>Micro Update 5</b> (9/14/2016) - 14.0.25431.01 - 
-		<span title="&lt;server&gt;drops\VS\d14vsuldr\layouts\x86ret\25431.01\enu\patch\kb3165756\dvd\VS14-KB3165756.exe">[Installer Server Path]</span>
-		<span title="??? / 079ac2bf93e5cbaa6d288d72371b3cc5b358711f / Roslyn-Hotfix-Signed-Release_20160902.2">[Roslyn Tag/SHA/Build]</span>
-	</li>
-    <li><b>Micro Update 1</b> (6/27/2016) - 14.0.25421.03 - 
-		<span title="&lt;server&gt;drops\VS\d14vsuldr\layouts\x86ret\25421.03\enu\patch\kb3165756\dvd\VS14-KB3165756.exe">[Installer Server Path]</span>
-	</li>
-    <li><b>RTM</b> (6/27/2016) - 14.0.25420.00 D14Rel - 
-		<span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25420.00\enu\vsupdate\setup\dvd\VS2015.3.exe">[Installer Server Path]</span>
-	</li>
-    <li><b>RC</b> (6/7/2016) - 14.0.25402.00 D14Rel - 
-		<span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25402.00\enu\vsupdate\setup\dvd\VS2015.3 RC.exe">[Installer Server Path]</span>
-	</li>
-  </ul>
-</ul>
-<ul>
-  <li><b>Visual Studio 2015 Update 2</b></li>
-  <ul>
-    <li>
-        <b>Micro Update 1</b> (3/30/2016) - 
-        <span title="Visual-Studio-2015-Update-2-Micro-Update-1 / 0ecf683eb041f9f2467f2da81dc8fbc5b5700a81 / Roslyn-Stabilization-Signed-Release_20160325.3">[Roslyn Tag/SHA/Build]</span>
-    </li>
-    <li>
-        <b>RTM</b> (3/30/2016) - 14.0.25123.00 D14Rel -
-        <span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25123.00\enu\vsupdate\setup\dvd\VS2015.2.exe">[Installer Server Path]</span>
-        <span title="Visual-Studio-2015-Update-2 / 03468bad399d07c654d4529f23eae64e4b57a522 / Roslyn-Stabilization-Signed-Release_20160317.4">[Roslyn Tag/SHA/Build]</span>
-    </li>
-    <li><b>RC</b> (3/3/2016) - 14.0.25029.00 D14Rel - 
-		<span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25029.00\enu\vsupdate\setup\dvd\VS2015.2 RC.exe">[Installer Server Path]</span>
-		<span title="Visual-Studio-2015-Update-2-RC / feeb753c3d327f95c4cbf43d293c0865365ee2f1 / Roslyn-Stabilization-Signed-Release_20160220.1">[Roslyn Tag/SHA/Build]</span>
-	</li>
-    <li><b>CTP</b> (2/10/2016) - 14.0.25008.00 D14Rel</li>
-  </ul>
-</ul>
-<ul>
-  <li><b>Visual Studio 2015 Update 1</b></li>
-  <ul>
-    <li><b>RTM</b> (11/30/2015) - 14.0.24720 D14Rel - 
-	    <span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\24720.00\enu\vsupdate\setup\dvd\VS2015.1.exe">[Installer Server Path]</span>
-		<span title="Visual-Studio-2015-Update-1 / 4cb203dab89e1542cdf7d88cb6d32767bc0e5460 / Roslyn-Stabilization-Signed-Release_20151109.1">[Roslyn Tag/SHA/Build]</span>
-	</li>
-    <li><b>RC</b> (10/29/2015) - 14.0.24627 D14Rel - 
-	    <span title="Visual-Studio-2015-Update-1-RC / 972e7e1bfe290231948378a63cf4a557ef655ee1 / Roslyn-Stabilization-Signed-Release_20151014.7">[Roslyn Tag/SHA/Build]</span>
-	</li>
-    <li><b>CTP</b> (10/8/2015) - 14.0.24606 D14Rel - 
-	    <span title="Visual-Studio-2015-Update-1-CTP / 28bd71d55adc66fdaf6504bac67a4e80e9f9763a / Roslyn-Master-Signed-Release_20150923.4">[Roslyn Tag/SHA/Build]</span>
-	</li>
-  </ul>
-</ul>
-<ul>
-  <li><b>Visual Studio 2015</b></li>
-  <ul>
-    <li><b>RTM</b> (7/20/2015) - 14.0.23107.0 D14Rel - 
-	    <span title="Visual-Studio-2015 / 21efbe199a41c21d6f59530d5fd5fc4f9d3f5abb / Dev14RTM-Signed-Release_20150618.3">[Roslyn Tag/SHA/Build]</span>
-	</li>	
-	<li><b>RC</b> - 14.0.22823 D14Rel -
-	    <span title="Visual-Studio-2015-RC / 9bec6b5dfe28e3e24f8cb9fb28ee6efa02c6f013 / Dev14RC-Signed-Release_20150411.1">[Roslyn Tag/SHA/Build]</span>
-	</li>
-	<li><b>CTP 6</b> - 14.0.22609 D14Rel - 
-	    <span title="Visual-Studio-2015-CTP-6 / ea718c308065d9af046d56208f16c51f72b96c27 / Dev14RC-Signed-Release_20150128.3">[Roslyn Tag/SHA/Build]</span>
-    </li>
-	<li><b>CTP 5</b> - 14.0.22512 DP - 
-	    <span title="Visual-Studio-2015-CTP-5 / 93334625b067b2a7aa589a09b0a13af5fca78738 / Dev14CTP2-Signed-Release_20150108.2">[Roslyn Tag/SHA/Build]</span>
-	</li>
-	<li><b>Preview</b> - 14.0.22310 DP
-	    <span title="Visual-Studio-2015-Preview / 412ba94207aa7d60a48cdd26cbc34fcd9cf295c4 / Dev14CTP-Signed-Release_20141031.1">[Roslyn Tag/SHA/Build]</span>
-	</li>
-  </ul>
-</ul>
+        .btn-info:selected {
+        background-color: #68217A;
+        border-color: #68217A;
+        }
 
-<h2>Visual Studio 2013</h2>
-<ul>
-  <li>Visual Studio 2013 Update 5 - 12.0.40629.0</li>
-  <li>Visual Studio 2013 Update 4 - 12.0.31101.0</li>
-  <li>Visual Studio 2013 Update 3 - 12.0.30723.0</li>
-  <li>Visual Studio 2013 Update 2 - 12.0.30324.0</li>
-  <li>Visual Studio 2013 Update 1 - 12.0.30110.0</li>
-  <li>Visual Studio 2013 (10/17/2013) - 12.0.21005.1</li>
-</ul>
+        .details {
+        padding-left: 25px;
+        }
 
-<h2>Visual Studio 2012</h2>
-<ul>
-  <li>Visual Studio 2012 Update 5 (8/21/2015)</li>
-  <ul>
-    <li>Update 5 RC (7/17/2015)
-  </li></ul>
-  <li>Visual Studio 2012 Update 4 (11/13/2013) - 11.0.61030.00</li>
-  <li>Visual Studio 2012 Update 3 (6/26/2013)</li>
-  <li>Visual Studio 2012 Update 2 (4/4/2013)</li>
-  <li>Visual Studio 2012 Update 1 (11/26/2012)</li>
-  <li>Visual Studio 2012 (9/12/2012)</li>
-</ul>
+        .date {
+        font-weight: bold;
+        display: inline-block;
+        width: 85px;
+        margin-left: 5px;
+        }
 
-<h2>Visual Studio 2010</h2>
-<ul>
-  <li>Visual Studio 2010 Service Pack 1 (3/3/2011) - 10.0.40219.1 SP1Rel</li>
-  <li>Visual Studio 2010 (4/12/2010) - 10.0.30319.1</li>
-</ul>
+        .version {
+        font-style: italic;
+        display: inline-block;
+        width: 180px;
+        }
+      </style>
+    </head>
 
-<h2>Visual Studio 2008</h2>
-<ul>
-  <li>Visual Studio 2008 Service Pack 1 - 9.00.30729.1 SP</li>
-  <li>Visual Studio 2008 (11/19/2007) - 9.0.21022.8</li>
-</ul>
+  <body>
+    <h2>Visual Studio 2017</h2>
+    <ul>
+      <li>
+        <b>Visual Studio 2017 version 15.3</b>
+        <ul>
+          <li>
+            <button type="button" class="btn-info">RTM</button> <span class="date">(8/14/2017)</span> - <span class="version">15.0.26730.3</span>
+          </li>
+          <li>
+            <button type="button" class="btn-info">Preview-7.1</button> <span class="date">(8/11/2017)</span> - <span class="version">15.0.26730.3</span>
+          </li>
+          <li>
+            <button type="button" class="btn-info">Preview-7</button> <span class="date">(?)</span> - <span class="version">?</span>
+          </li>
+          <li>
+            <button type="button" class="btn-info">Preview-6</button> <span class="date">(?)</span> - <span class="version">?</span>
+          </li>
+          <li>
+            <button type="button" class="btn-info">Preview-5</button> <span class="date">(?)</span> - <span class="version">?</span>
+          </li>
+          <li>
+            <button type="button" class="btn-info">Preview-4</button> <span class="date">(?)</span> - <span class="version">?</span>
+          </li>
+          <li>
+            <button type="button" class="btn-info">Preview-3</button> <span class="date">(?)</span> - <span class="version">?</span>
+          </li>
+          <li>
+            <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#153P2">Preview-2</button> <span class="date">(6/8/2017)</span> - <span class="version">15.3.0+26606.00-d15rel</span>
+            <div id="153P2" class="details collapse">
+              <b>
+                <a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Preview-2-Version-15.3" target="_blank">Roslyn Tag</a>:
+              </b> Visual-Studio-2017-Preview-2-Version-15.3<br />
+              <b>Roslyn SHA:</b> 3722bb710cae2b542cc2004aacd5ac21836592a4<br />
+              <b>Roslyn Build:</b> Roslyn-Signed_20170601.1
+            </div>
+          </li>
+          <li>
+            <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#153P1">Preview-1</button> <span class="date">(5/11/2017)</span> - <span class="version">15.3.0+26510.00-d15rel</span>
+            <div id="153P1" class="details collapse">
+              <b>
+                <a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Preview-Version-15.3" target="_blank">Roslyn Tag</a>:
+              </b> Visual-Studio-2017-Preview-Version-15.3<br />
+              <b>Roslyn SHA:</b> 8f02e04893c4b53cf6ca11b064848888365914d3<br />
+              <b>Roslyn Build:</b> Roslyn-Signed_20170503.10
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#152">Update-2</button> <span class="date">(6/9/2017)</span> - <span class="version">15.2.0+26430.13-d15svc</span>
+        <div id="152" class="details collapse">
+          <b>
+            <a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Version-15.2" target="_blank">Roslyn Tag</a>:
+          </b> Visual-Studio-2017-Version-15.2<br />
+          <b>Roslyn SHA:</b> 6969b516a24b460e269b1ae2be09d8c4cd220c27<br />
+          <b>Roslyn Build:</b> Roslyn-Signed_20170424.4
+        </div>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#151">Update-1</button> <span class="date">(4/17/2017)</span> - <span class="version">15.1.0+26403.07-d15svc</span>
+        <div id="151" class="details collapse">
+          <b>
+            <a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-Version-15.1" target="_blank">Roslyn Tag</a>:
+          </b> Visual-Studio-2017-Version-15.1<br />
+          <b>Roslyn SHA:</b> 3f5bdf2a01f91470f1c8d0744bad3faabe39c4a3<br />
+          <b>Roslyn Build:</b> Roslyn-Signed_20170320.4
+        </div>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#15">RTW</button> <span class="date">(3/31/2017)</span> - <span class="version">15.0.0+26228.12-d15rtwsvc</span>
+        <div id="15" class="details collapse">
+          <b>
+            <a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017" target="_blank">Roslyn Tag</a>:
+          </b> Visual-Studio-2017<br />
+          <b>Roslyn SHA:</b> 019ce6f2d8048aee7e0e8b4a9d9733ce91469898<br />
+          <b>Roslyn Build:</b> Roslyn-Signed_20170301.5
+        </div>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15rc4">RC.4</button> <span class="date">(2/7/2017)</span> - <span class="version">15.0.0-RC4+26206.0.d15rel</span>
+        <div id="d15rc4" class="details collapse">
+          <b>
+            <a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-RC4" target="_blank">Roslyn Tag</a>:
+          </b> Visual-Studio-2017-RC4<br />
+          <b>Roslyn SHA:</b> 53f2a8744e08c70cd42e38e3d5571a957ddaaf69<br />
+          <b>Roslyn Build:</b> Roslyn-Signed_20170204.7
+        </div>
+      </li>
+      <li>
+        <button type="button" class="btn-info">RC.3</button> <span class="date">(1/27/2017)</span> - <span class="version">15.0.0-RC.3+26127.0</span>
+      </li>
+      <li>
+        <button type="button" class="btn-info">RC.2</button>
+        <span class="date">(12/12/2016)</span>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15rc">RC</button> <span class="date">(11/16/2016)</span> - <span class="version">15.0.25909.02 d15rel</span> [Roslyn Info]
+        <div id="d15rc" class="details collapse">
+          <b>
+            <a href="https://github.com/dotnet/roslyn/releases/tag/Visual-Studio-2017-RC" target="_blank">Roslyn Tag</a>:
+          </b> Visual-Studio-2017-RC<br />
+          <b>Roslyn SHA:</b> 5bfc051d4e24768be0e9f515b57e14375fb3b4e5<br />
+          <b>Roslyn Build:</b> Roslyn-Signed_20161104.10
+        </div>
+      </li>
+      <li>
+        <button type="button" class="btn-info">Preview 5</button> <span class="date">(10/05/2016)</span> - <span class="version">15.0.25802.00 Preview</span>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15preview4">Preview 4</button> <span class="date">(8/22/2016)</span> - <span class="version">15.0.25618.00 Preview</span> [Roslyn Info]
+        <div id="d15preview4" class="details collapse">
+          <b>Roslyn Tag:</b> Visual-Studio-15-Preview-4<br />
+          <b>Roslyn SHA:</b> eb964d42c8f8e763e4379f1e33c3cf5547692a3f<br />
+          <b>Roslyn Build:</b> Roslyn-Signed\dev15-preview4-df\Release\20160808.3
+        </div>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15preview3">Preview 3</button> <span class="date">(7/7/2016)</span> - <span class="version">15.0.25428.01 Preview</span> [Installer Path]
+        <div id="d15preview3" class="details collapse">
+          <b>Installer Path:</b> &lt;server&gt;\drops\vs\preview\layouts\x86ret\25428.01\enu\vs\enterprise\dvd\vs_enterprise.exe
+        </div>
+      </li>
+      <li>
+        <button type="button" class="btn-info">Preview 2</button> <span class="date">(5/10/2016)</span> - <span class="version">15.0.25302.00 Preview</span>
+      </li>
+      <li>
+        <button type="button" class="expandableButton btn-info collapsed" data-toggle="collapse" data-target="#d15preview">Preview</button> <span class="date">(3/30/2016)</span> - <span class="version">15.0.25123.00 Preview</span> [Installer Path] [Roslyn Info]
+        <div id="d15preview" class="details collapse">
+          <b>Installer Path:</b> &lt;server&gt;\drops\vs\preview\layouts\x86ret\25123.00\enu\vs\enterprise\dvd\vs_enterprise.exe<br />
+          <b>Roslyn Tag:</b> Visual-Studio-15-Preview<br />
+          <b>Roslyn SHA:</b> af0922bd496d60403886cc5c32997adced7da7d7<br />
+          <b>Roslyn Build:</b> Roslyn-Future-Stabilization-Signed-Release_20160317.3
+        </div>
+      </li>
+    </ul>
 
-<h2>Visual Studio 2005</h2>
-<ul>
-  <li>Visual Studio 2005 Service Pack 1 (12/14/2006)</li>
-  <li>Visual Studio 2005 (11/7/2005) - 8.0.5072.42</li>
-</ul>
+    <h2>Visual Studio 2015</h2>
+    <ul>
+      <li>
+        <b>Visual Studio 2015 Update 3</b>
+      </li>
+      <ul>
+        <li>
+          <b>Micro Update 5</b> (9/14/2016) - 14.0.25431.01 -
+          <span title="&lt;server&gt;drops\VS\d14vsuldr\layouts\x86ret\25431.01\enu\patch\kb3165756\dvd\VS14-KB3165756.exe">[Installer Server Path]</span>
+          <span title="??? / 079ac2bf93e5cbaa6d288d72371b3cc5b358711f / Roslyn-Hotfix-Signed-Release_20160902.2">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>Micro Update 1</b> (6/27/2016) - 14.0.25421.03 -
+          <span title="&lt;server&gt;drops\VS\d14vsuldr\layouts\x86ret\25421.03\enu\patch\kb3165756\dvd\VS14-KB3165756.exe">[Installer Server Path]</span>
+        </li>
+        <li>
+          <b>RTM</b> (6/27/2016) - 14.0.25420.00 D14Rel -
+          <span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25420.00\enu\vsupdate\setup\dvd\VS2015.3.exe">[Installer Server Path]</span>
+        </li>
+        <li>
+          <b>RC</b> (6/7/2016) - 14.0.25402.00 D14Rel -
+          <span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25402.00\enu\vsupdate\setup\dvd\VS2015.3 RC.exe">[Installer Server Path]</span>
+        </li>
+      </ul>
+    </ul>
+    <ul>
+      <li>
+        <b>Visual Studio 2015 Update 2</b>
+      </li>
+      <ul>
+        <li>
+          <b>Micro Update 1</b> (3/30/2016) -
+          <span title="Visual-Studio-2015-Update-2-Micro-Update-1 / 0ecf683eb041f9f2467f2da81dc8fbc5b5700a81 / Roslyn-Stabilization-Signed-Release_20160325.3">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>RTM</b> (3/30/2016) - 14.0.25123.00 D14Rel -
+          <span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25123.00\enu\vsupdate\setup\dvd\VS2015.2.exe">[Installer Server Path]</span>
+          <span title="Visual-Studio-2015-Update-2 / 03468bad399d07c654d4529f23eae64e4b57a522 / Roslyn-Stabilization-Signed-Release_20160317.4">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>RC</b> (3/3/2016) - 14.0.25029.00 D14Rel -
+          <span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\25029.00\enu\vsupdate\setup\dvd\VS2015.2 RC.exe">[Installer Server Path]</span>
+          <span title="Visual-Studio-2015-Update-2-RC / feeb753c3d327f95c4cbf43d293c0865365ee2f1 / Roslyn-Stabilization-Signed-Release_20160220.1">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>CTP</b> (2/10/2016) - 14.0.25008.00 D14Rel
+        </li>
+      </ul>
+    </ul>
+    <ul>
+      <li>
+        <b>Visual Studio 2015 Update 1</b>
+      </li>
+      <ul>
+        <li>
+          <b>RTM</b> (11/30/2015) - 14.0.24720 D14Rel -
+          <span title="&lt;server&gt;\drops\VS\d14rel\layouts\x86ret\24720.00\enu\vsupdate\setup\dvd\VS2015.1.exe">[Installer Server Path]</span>
+          <span title="Visual-Studio-2015-Update-1 / 4cb203dab89e1542cdf7d88cb6d32767bc0e5460 / Roslyn-Stabilization-Signed-Release_20151109.1">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>RC</b> (10/29/2015) - 14.0.24627 D14Rel -
+          <span title="Visual-Studio-2015-Update-1-RC / 972e7e1bfe290231948378a63cf4a557ef655ee1 / Roslyn-Stabilization-Signed-Release_20151014.7">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>CTP</b> (10/8/2015) - 14.0.24606 D14Rel -
+          <span title="Visual-Studio-2015-Update-1-CTP / 28bd71d55adc66fdaf6504bac67a4e80e9f9763a / Roslyn-Master-Signed-Release_20150923.4">[Roslyn Tag/SHA/Build]</span>
+        </li>
+      </ul>
+    </ul>
+    <ul>
+      <li>
+        <b>Visual Studio 2015</b>
+      </li>
+      <ul>
+        <li>
+          <b>RTM</b> (7/20/2015) - 14.0.23107.0 D14Rel -
+          <span title="Visual-Studio-2015 / 21efbe199a41c21d6f59530d5fd5fc4f9d3f5abb / Dev14RTM-Signed-Release_20150618.3">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>RC</b> - 14.0.22823 D14Rel -
+          <span title="Visual-Studio-2015-RC / 9bec6b5dfe28e3e24f8cb9fb28ee6efa02c6f013 / Dev14RC-Signed-Release_20150411.1">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>CTP 6</b> - 14.0.22609 D14Rel -
+          <span title="Visual-Studio-2015-CTP-6 / ea718c308065d9af046d56208f16c51f72b96c27 / Dev14RC-Signed-Release_20150128.3">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>CTP 5</b> - 14.0.22512 DP -
+          <span title="Visual-Studio-2015-CTP-5 / 93334625b067b2a7aa589a09b0a13af5fca78738 / Dev14CTP2-Signed-Release_20150108.2">[Roslyn Tag/SHA/Build]</span>
+        </li>
+        <li>
+          <b>Preview</b> - 14.0.22310 DP
+          <span title="Visual-Studio-2015-Preview / 412ba94207aa7d60a48cdd26cbc34fcd9cf295c4 / Dev14CTP-Signed-Release_20141031.1">[Roslyn Tag/SHA/Build]</span>
+        </li>
+      </ul>
+    </ul>
 
-</body>
+    <h2>Visual Studio 2013</h2>
+    <ul>
+      <li>Visual Studio 2013 Update 5 - 12.0.40629.0</li>
+      <li>Visual Studio 2013 Update 4 - 12.0.31101.0</li>
+      <li>Visual Studio 2013 Update 3 - 12.0.30723.0</li>
+      <li>Visual Studio 2013 Update 2 - 12.0.30324.0</li>
+      <li>Visual Studio 2013 Update 1 - 12.0.30110.0</li>
+      <li>Visual Studio 2013 (10/17/2013) - 12.0.21005.1</li>
+    </ul>
+
+    <h2>Visual Studio 2012</h2>
+    <ul>
+      <li>Visual Studio 2012 Update 5 (8/21/2015)</li>
+      <ul>
+        <li>
+          Update 5 RC (7/17/2015)
+        </li>
+      </ul>
+      <li>Visual Studio 2012 Update 4 (11/13/2013) - 11.0.61030.00</li>
+      <li>Visual Studio 2012 Update 3 (6/26/2013)</li>
+      <li>Visual Studio 2012 Update 2 (4/4/2013)</li>
+      <li>Visual Studio 2012 Update 1 (11/26/2012)</li>
+      <li>Visual Studio 2012 (9/12/2012)</li>
+    </ul>
+
+    <h2>Visual Studio 2010</h2>
+    <ul>
+      <li>Visual Studio 2010 Service Pack 1 (3/3/2011) - 10.0.40219.1 SP1Rel</li>
+      <li>Visual Studio 2010 (4/12/2010) - 10.0.30319.1</li>
+    </ul>
+
+    <h2>Visual Studio 2008</h2>
+    <ul>
+      <li>Visual Studio 2008 Service Pack 1 - 9.00.30729.1 SP</li>
+      <li>Visual Studio 2008 (11/19/2007) - 9.0.21022.8</li>
+    </ul>
+
+    <h2>Visual Studio 2005</h2>
+    <ul>
+      <li>Visual Studio 2005 Service Pack 1 (12/14/2006)</li>
+      <li>Visual Studio 2005 (11/7/2005) - 8.0.5072.42</li>
+    </ul>
+
+  </body>
 </html>
